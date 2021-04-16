@@ -1,0 +1,14 @@
+package com.microservice.demo.controller;
+
+import org.jboss.logging.Logger;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CircuitBreakerController {
+	private Logger logger=Logger.getLogger(CircuitBreakerController.class);
+    @GetMapping("/sampleAPI")
+	public String getSampleData() {
+		return "Sample Response";
+	}
+}

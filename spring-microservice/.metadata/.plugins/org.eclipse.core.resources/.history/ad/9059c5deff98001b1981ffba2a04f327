@@ -1,0 +1,5 @@
+package com.microservice.demo.controller;
+
+public class CircuitBreakerController {
+
+}
